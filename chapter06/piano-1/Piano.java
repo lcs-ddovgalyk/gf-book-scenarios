@@ -36,16 +36,16 @@ public class Piano extends World
             //condition 1         //condition 2  
         if((frames % 60 == 0) && (frames/60 < 14) ) {
             //only show a mwssage when we are in the bounds of the array
-            showText("Array index is: " + frames/60, 400, 250);
+            //showText("Array index is: " + frames/60, 400, 250);
 
             //Say Hello to say everyone in the class!
-            showText("Hello " +peopleInClass[frames/60], 400, 170);
+            //showText("Hello " +peopleInClass[frames/60], 400, 170);
 
         }
         //track frames
         frames += 1;
         //show the frames
-        showText("" + frames, 100,100);
+        //showText("" + frames, 100,100);
 
     }
 }
