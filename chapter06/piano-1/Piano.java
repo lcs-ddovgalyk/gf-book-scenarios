@@ -36,12 +36,13 @@ public class Piano extends World
         //Say 'Hello' to a different person every second
         //this code runs only when the first and the second 
         //conditions are true
+        int position = frames / 60;
         
         
             //condition 1         //condition 2  
-        if((frames % 60 == 0) && (frames/60 < 14) ) {
+        if((frames % 60 == 0) && (position < 14) ) {
             //only show a mwssage when we are in the bounds of the array
-            //showText("Array index is: " + frames/60, 400, 250);
+            showText("Array index is: " + position, 400, 250);
 
             //Say Hello to say everyone in the class!
             //showText("Hello " +peopleInClass[frames/60], 400, 170);
