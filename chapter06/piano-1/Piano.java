@@ -17,7 +17,12 @@ public class Piano extends World
     //create the array 
     String[] peopleInClass = {"Julio", "Liam", "Dima", "Osman", "Eric", "Phillip",
             "Joven", "Joe", "Gordon", "Juem", "Selena", "Sam", "Jeff","Nick"};
-
+    //create two arrays
+    //first array trakcs the key board keys that we will ise for white piano keys
+    String[] whiteKeys = {"a", "s", "d", "f", "g", "h", "j", "k", "l", ";", "'","\\"};
+    //Second arrat trakcs the sound file for each note 
+    String[] whiteNotes = {"3c", "3d", "3e", "3f", "3g", "3a", "3b", "4c", "4d", "4e",
+                           "4f", "4g"};
     public Piano() 
     {
         super(800, 340, 1);
