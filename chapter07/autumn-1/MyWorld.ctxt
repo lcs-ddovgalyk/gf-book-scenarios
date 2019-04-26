@@ -7,4 +7,6 @@ comment1.text=\n\ Create\ the\ world\ and\ objects\ in\ it.\n
 comment2.params=
 comment2.target=void\ setUp()
 comment2.text=\n\ Create\ the\ initial\ objects\ in\ the\ world.\n
-numComments=3
+comment3.params=
+comment3.target=void\ createLeaf()
+numComments=4

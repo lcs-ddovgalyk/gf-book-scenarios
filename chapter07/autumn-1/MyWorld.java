@@ -18,12 +18,9 @@ public class MyWorld extends World
     {    
         super(600, 400, 1);
         setUp();
-        for(int index=0; index<19; index+=1){
-            x = Greenfoot.getRandomNumber(600);
-            y = Greenfoot.getRandomNumber(400);
-            addObject(new Leaf(), x, y);
-            
-        }
+        //creates 18 leafs
+        createLeaf();
+        
     }
     
     /**
@@ -32,5 +29,17 @@ public class MyWorld extends World
     private void setUp()
     {
         addObject(new Block(), 300, 200);
+    }
+    private void createLeaf(){
+        //creates 18 leafes at 18 different random locations
+        for(int i=0; i<19; i+=1){
+            // gets a random number for the x location
+            x = Greenfoot.getRandomNumber(600);
+            // get a random number for the y location
+            y = Greenfoot.getRandomNumber(400);
+            // creates a leaf at a random location
+            addObject(new Leaf(), x, y);
+            
+        }
     }
 }
