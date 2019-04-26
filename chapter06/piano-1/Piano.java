@@ -50,6 +50,8 @@ public class Piano extends World
             
             Key aKey = new Key(whiteKeys[position], whiteNotes[position]);
             addObject(aKey, 54 + position * 63,140);
+            
+            
             //Say Hello to say everyone in the class!
             //showText("Hello " +peopleInClass[frames/60], 400, 170);
 

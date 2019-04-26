@@ -36,6 +36,12 @@ public class Block extends Actor
         if (isAtEdge()) 
         {
             delta = -delta;  // reverse direction
+            
+            //add new Leaf object to the world
+            //1.add a reference to the world
+            World myWorld = getWorld();
+            //2. Use the object refference to call, or use, a method on the Wrold Object
+            myWorld.addObject(new Leaf(), 100, 100);
         }
     }
     
