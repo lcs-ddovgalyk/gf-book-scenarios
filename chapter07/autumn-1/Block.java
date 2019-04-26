@@ -39,9 +39,9 @@ public class Block extends Actor
             
             //add new Leaf object to the world
             //1.add a reference to the world
-            World myWorld = getWorld();
+            //World myWorld = getWorld();
             //2. Use the object refference to call, or use, a method on the Wrold Object
-            myWorld.addObject(new Leaf(), getX(), getY());
+            //myWorld.addObject(new Leaf(), getX(), getY());
         }
     }
     

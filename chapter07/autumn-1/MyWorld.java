@@ -8,6 +8,9 @@ import greenfoot.*;
  */
 public class MyWorld extends World
 {
+    int x;
+    int y;
+    
     /**
      * Create the world and objects in it.
      */
@@ -15,6 +18,12 @@ public class MyWorld extends World
     {    
         super(600, 400, 1);
         setUp();
+        for(int index=0; index<19; index+=1){
+            x = Greenfoot.getRandomNumber(600);
+            y = Greenfoot.getRandomNumber(400);
+            addObject(new Leaf(), x, y);
+            
+        }
     }
     
     /**
